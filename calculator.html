@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cameron Delorey">
+    <meta name="email" content="delo0126@algonquinlive.com">
+    <title>Very Simple Calculator</title>
+    <script src="calculator-functions.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div onclick="" class="calculator">
+
+    <table class="keypad">
+        <tr id="total_display_table_element" >
+            <td  colspan="4"><h3 id="total_display"></h3></td>
+        </tr>
+        <tr id="current_display_table_element">
+            <td  colspan="4"><h1 id="current_display" class="display">0</h1></td>
+        </tr>
+        <tr>
+            <td><button onclick="update_current_display(7)">7</button></td>
+            <td><button onclick="update_current_display(8)">8</button></td>
+            <td><button onclick="update_current_display(9)">9</button></td>
+            <td><button onclick="add_operator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="update_current_display(4)">4</button></td>
+            <td><button onclick="update_current_display(5)">5</button></td>
+            <td><button onclick="update_current_display(6)">6</button></td>
+            <td><button onclick="add_operator('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="update_current_display(1)">1</button></td>
+            <td><button onclick="update_current_display(2)">2</button></td>
+            <td><button onclick="update_current_display(3)">3</button></td>
+            <td><button onclick="add_operator('X')">X</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="update_current_display(0)">0</button></td>
+            <td><button onclick="clearit()">C</button></td>
+            <td><button onclick="calculate()">=</button></td>
+            <td><button onclick="add_operator('+')">+</button></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
+
